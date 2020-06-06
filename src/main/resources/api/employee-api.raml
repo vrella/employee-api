@@ -1,0 +1,14 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/fe07733b-22cd-4895-b1ec-dcb9a033cc12/ # 
+title: employee-api
+version: 1.0
+
+
+/employee:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include employee.json
+      
